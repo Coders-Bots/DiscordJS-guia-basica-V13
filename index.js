@@ -79,7 +79,7 @@ client.on('messageCreate', async message => {
   let owners = config.client.devs
 
   if (command.devs_execute && owners.includes(message.author.id)) {
-    command.execute(message, args, client, MessageEmbed)
+    command.execute(message, args, client)
     return
   }
 
@@ -243,7 +243,7 @@ client.on('messageCreate', async message => {
 
   console.log(commandName + " por " + message.author.tag + " en el server " + message.guild.name)
   try {
-    command.execute(message, args, prefix, client);
+    command.execute(message, args, client);
   } catch (error) {
     console.error(error);
     try {
