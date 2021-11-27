@@ -1,15 +1,15 @@
 {
     "client":{
-        "token": "NzcxOTMzMTA2MTE3OTM1MTI1.X5zUug.b9nIacQ3xAmTvMpyODltjBws_Ys",
-        "owner": "487320154447806469",
-        "devs": ["487320154447806469"],
-        "default_prefix": "s!"   
+        "token": "TOKEN",
+        "owner": "OWNER ID",
+        "devs": ["ID1", "ID2", "ETC"],
+        "default_prefix": "!"   
     },
     "slash":{
     "mode":{
         "dev":{
             "enabled": true,
-            "GuildID": "899680839326130217"
+            "GuildID": "ID_DEL_SERVIDOR_DE_TEST"
         }
     }
     }
