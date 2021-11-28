@@ -56,3 +56,6 @@ module.exports = {
       }
     },
 };
+
+// comando aportado por @IJust 💍ª#0001
+// editado por @KredoF#3006

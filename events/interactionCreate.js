@@ -52,8 +52,11 @@ module.exports = {
 
             }
             interaction.member = interaction.guild.members.cache.get(interaction.user.id);
-
-            cmd.run(client, interaction, args);
+            try {
+                await cmd.run(client, interaction, args);
+            }catch(e){
+                console.log(e)
+            }
         }
 
         // Context Menu Handling

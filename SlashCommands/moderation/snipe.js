@@ -43,8 +43,9 @@ try{
     if(msg.attachment) return interaction.channel.send({content: "Archivo:", files: [msg.attachment], ephemeral: false })
 
   }
-  console.log(`SLASH\n Snipe por ${interaction.user.username} en el server ${interaction.guild.name}`)
 } catch(e) { console.log(e)}        
 
     },
 };
+
+// comando aportado por @IJust 💍ª#0001
