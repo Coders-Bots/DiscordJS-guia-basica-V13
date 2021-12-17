@@ -25,18 +25,6 @@ let package = require("./package.json")
 
 
 client.on('messageCreate', async message => {
-  if (message.channel.type == "DM") {
-    if (message.author.bot) return;
-    let attach;
-    if (message.attachments.size) {
-      attach = new Discord.MessageAttachment(message.attachments.first().url, `${message.attachments.first().name}`)
-    }
-    let send_ = client.users.cache.get(config.client.owner)
-
-    await send_.send({ content: `${message.author.tag}:\n${message.content}`, files: [attach] })
-    return;
-  }
-
 
   let prefix = prefixdb.has(message.guild.id)
     ? await prefixdb.get(message.guild.id)

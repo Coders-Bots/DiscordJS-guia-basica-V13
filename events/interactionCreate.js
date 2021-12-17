@@ -7,12 +7,6 @@ module.exports = {
 
     async execute(interaction, client) {
 
-        let i = new Discord.MessageAttachment("https://cdn.discordapp.com/attachments/775053583527051276/850118491440414791/y2mate.com_-_Lo_ignora_epicamente_360p.mp4")
-        let bl = blacklist.tiene(interaction.user.id);
-        try {
-            if (bl) return interaction.reply({ content: "*Lo ignora epicamente ", files: [i], ephemeral: true });
-        } catch (e) { console.log(e) }
-
         // Slash Command Handling
         if (interaction.isCommand()) {
 
