@@ -15,12 +15,7 @@ module.exports = {
         required: false
 
     }],
-    /**
-     *
-     * @param {Client} client
-     * @param {CommandInteraction} interaction
-     * @param {String[]} args
-     */
+  
     run: async (client, interaction, args) => {
 try{
   const channel = interaction.options.getChannel("canal") || interaction.channel;
